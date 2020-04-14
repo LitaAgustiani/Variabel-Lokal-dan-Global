@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+//ini adalah deklarasi variabel global
+
+// deklarasi variabel global pertama
+int z = 700;
+
+int function1()
+{
+	int z = 350;
+	return z;
+	// variabel dihapus/dihancurkan dari alamat memori
+}
+
+// deklarasi variabel global keduua
+int y = 500;
+
+int function2()
+{
+	int y = 250;
+	return y;
+	// variabel dihapus/dihancurkan dari alamat memori
+}
+
+// deklarasi variabel global ketiga
+int x = 300;
+
+int function3()
+{
+	int x = 350;
+	return x;
+	// variabel dihapus/dihancurkan dari alamat memori
+}
+
+int main ()
+{
+	cout << z << " adalah variabel global z" << endl;
+	cout << function1() << " adalah variabel global function pertama" << endl;
+	
+	cout << y << " adalah variabel global y" << endl;
+	cout << function2() << " adalah variabel global function kedua" << endl;
+	
+	cout << x << " adalah variabel global x" << endl;
+	cout << function3() << " adalah variabel global function ketiga" << endl;
+}
